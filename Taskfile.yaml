@@ -34,7 +34,7 @@ tasks:
   clean:
     desc: Clean build artifacts
     cmds:
-      - rm -rf js *.tsbuildinfo
+      - rm -rf js *.tsbuildinfo out
 
   publish:
     desc: Publish the project
