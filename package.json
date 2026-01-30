@@ -1,6 +1,6 @@
 {
   "name": "@suin/shell-escape-arg",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Format strings as POSIX shell argument literals",
   "keywords": [
     "shell",
