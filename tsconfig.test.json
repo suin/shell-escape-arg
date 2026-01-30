@@ -6,6 +6,8 @@
   ],
   "compilerOptions": {
     "composite": true,
+    "target": "ES2022",
+    "lib": ["ES2022"],
     "noEmit": true
   },
   "references": [
