@@ -36,14 +36,6 @@ tasks:
     cmds:
       - rm -rf js *.tsbuildinfo out
 
-  publish:
-    desc: Publish the project
-    cmds:
-      - task: install
-      - task: build
-      - bunx npm --version
-      - bunx npm publish # https://docs.npmjs.com/trusted-publishers
-
   docs:
     desc: Build the docs
     cmds:
