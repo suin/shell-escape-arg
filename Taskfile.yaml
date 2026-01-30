@@ -1,0 +1,51 @@
+# https://taskfile.dev
+
+version: "3"
+
+tasks:
+  ci:
+    desc: Run the CI pipeline
+    cmds:
+      - task: install
+      - task: build
+      - task: lint
+      - task: test
+
+  install:
+    desc: Install the dependencies
+    cmds:
+      - bun install --frozen-lockfile
+
+  build:
+    desc: Build the project
+    cmds:
+      - bunx tsc -b
+
+  lint:
+    desc: Run the linter
+    cmds:
+      - bunx biome ci --error-on-warnings
+
+  test:
+    desc: Run the tests
+    cmds:
+      - bun test --pass-with-no-tests
+
+  clean:
+    desc: Clean build artifacts
+    cmds:
+      - rm -rf js *.tsbuildinfo
+
+  publish:
+    desc: Publish the project
+    cmds:
+      - task: install
+      - task: build
+      - bunx npm --version
+      - bunx npm publish # https://docs.npmjs.com/trusted-publishers
+
+  docs:
+    desc: Build the docs
+    cmds:
+      - task: install
+      - bunx typedoc --out out/docs

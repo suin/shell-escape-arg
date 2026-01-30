@@ -1,0 +1,27 @@
+{
+  "name": "shell-escape-arg",
+  "version": "0.0.0",
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./js/index.d.ts",
+      "import": "./js/index.js"
+    }
+  },
+  "main": "./js/index.js",
+  "types": "./js/index.d.ts",
+  "files": [
+    "js"
+  ],
+  "devDependencies": {
+    "@biomejs/biome": "^2.3.13",
+    "@suin/biome.json": "^0.1.0",
+    "@tsconfig/node22": "^22.0.1",
+    "@tsconfig/strictest": "^2.0.8",
+    "@types/bun": "latest",
+    "@types/node": "^25.1.0"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  }
+}
