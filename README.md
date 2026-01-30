@@ -127,7 +127,7 @@ The library quotes strings that contain:
 - **Empty string** – Would disappear without quotes
 - **Unicode whitespace** – Space, tab, newline, NBSP, ideographic space (U+3000), etc.
 - **ASCII control characters** – U+0001–U+001F, U+007F
-- **Shell meta-characters** – `' " \ $ \` | & ; < > ( ) \* ? [ ] { } ! #`
+- **Shell meta-characters** – `` ' " \ $ ` | & ; < > ( ) * ? [ ] { } ! # ``
 - **Leading tilde** – Would trigger tilde expansion
 
 ## Error Handling
