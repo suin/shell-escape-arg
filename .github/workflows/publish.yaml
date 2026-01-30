@@ -19,7 +19,7 @@ jobs:
         with:
           node-version: "24"
           registry-url: "https://registry.npmjs.org"
-      - run: devbox run -- task build
+      - run: devbox run -- task ci
       - run: npm --version
       - run: npm publish # https://docs.npmjs.com/trusted-publishers
 
