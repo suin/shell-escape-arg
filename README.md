@@ -1,5 +1,7 @@
 # @suin/shell-escape-arg
 
+![social-preview](social-preview.svg)
+
 [![npm version](https://img.shields.io/npm/v/@suin/shell-escape-arg)](https://www.npmjs.com/package/@suin/shell-escape-arg)
 [![npm downloads](https://img.shields.io/npm/dm/@suin/shell-escape-arg)](https://www.npmjs.com/package/@suin/shell-escape-arg)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
